@@ -2,9 +2,18 @@
 name = "tx2-pack"
 version = "0.1.0"
 edition = "2021"
+authors = ["TX-2 Contributors"]
+license = "MIT"
+description = "Binary world snapshot format for ECS persistence, checkpointing, and time-travel"
+repository = "https://github.com/IreGaddr/tx2-pack"
+homepage = "https://github.com/IreGaddr/tx2-pack"
+documentation = "https://docs.rs/tx2-pack"
+keywords = ["ecs", "snapshot", "checkpoint", "replay", "persistence"]
+categories = ["game-development", "encoding", "compression"]
+readme = "README.md"
 
 [dependencies]
-tx2-link = { path = "../tx2-link" }
+tx2-link = { version = "0.1.0", path = "../tx2-link" }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 bincode = "1.3"
